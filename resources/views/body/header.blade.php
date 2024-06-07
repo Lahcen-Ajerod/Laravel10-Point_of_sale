@@ -30,9 +30,16 @@
              </li>
 
              <li class="dropdown d-none d-lg-inline-block">
-                 <a class="nav-link dropdown-toggle arrow-none waves-effect waves-light" data-toggle="fullscreen"
+                 <a class="nav-link dropdown-toggle arrow-none waves-effect waves-light"
                      href="#">
                      <i class="fe-maximize noti-icon"></i>
+                 </a>
+             </li>
+             <li class="dropdown d-none d-lg-inline-block">
+                 <a class="nav-link dropdown-toggle arrow-none waves-effect waves-light" data-toggle="dark"
+                     href="#">
+                     <i class="fa-regular fa-sun" id="light-icon"></i>
+                     <i class="fe-moon noti-icon" id="dark-icon"></i>
                  </a>
              </li>
 

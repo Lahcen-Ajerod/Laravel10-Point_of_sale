@@ -145,7 +145,9 @@ class EmployeeController extends Controller
 
         $employee_img = Employee::findOrFail($id);
         $img = $employee_img->image;
-        unlink($img);
+        if($img){
+            unlink($img);
+        }
 
         Employee::findOrFail($id)->delete();
 

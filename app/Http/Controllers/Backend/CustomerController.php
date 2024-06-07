@@ -144,7 +144,9 @@ class CustomerController extends Controller
 
         $customer_img = Customer::findOrFail($id);
         $img = $customer_img->image;
-        unlink($img);
+        if ($img !== "upload/no_image.jpg"){
+            unlink($img);
+        }
 
         Customer::findOrFail($id)->delete();
 

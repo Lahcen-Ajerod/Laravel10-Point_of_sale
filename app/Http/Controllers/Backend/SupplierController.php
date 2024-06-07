@@ -152,7 +152,10 @@ class SupplierController extends Controller
 
         $supplier_img = Supplier::findOrFail($id);
         $img = $supplier_img->image;
-        unlink($img);
+        if ($img){
+            unlink($img);
+        }
+
 
         Supplier::findOrFail($id)->delete();
 

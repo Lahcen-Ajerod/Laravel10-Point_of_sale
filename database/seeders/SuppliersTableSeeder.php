@@ -24,7 +24,7 @@ class SuppliersTableSeeder extends Seeder
                 'phone' => $faker->phoneNumber,
                 'address' => $faker->address,
                 'shopname' => $faker->company,
-                'image' => null,
+                'image' => 'upload/no_image.jpg',
                 'type' => $faker->randomElement(['Type A', 'Type B', 'Type C']),
                 'account_holder' => $faker->name,
                 'account_number' => $faker->bankAccountNumber,

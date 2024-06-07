@@ -24,7 +24,7 @@ class EmployeesTableSeeder extends Seeder
                 'phone' => $faker->phoneNumber,
                 'address' => $faker->address,
                 'experience' => $faker->randomElement(['1 year', '2 years', '3 years', '4 years', '5 years']),
-                'image' => null,
+                'image' => 'upload/no_image.jpg',
                 'salary' => $faker->randomNumber(5),
                 'vacation' => $faker->randomElement(['2 weeks', '3 weeks', '4 weeks']),
                 'city' => $faker->city,

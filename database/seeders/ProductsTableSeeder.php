@@ -30,7 +30,7 @@ class ProductsTableSeeder extends Seeder
             $supplierId = $faker->randomElement($supplierIds);
             $productCode = $faker->ean13;
             $productGarage = $faker->word;
-            $productImage = null;
+            $productImage = 'upload/no_image.jpg';
             $productStore = $faker->word;
             $buyingDate = $faker->date();
             $expireDate = $faker->date();

@@ -24,7 +24,7 @@ class CustomersTableSeeder extends Seeder
                 'phone' => $faker->phoneNumber,
                 'address' => $faker->address,
                 'shopname' => $faker->company,
-                'image' => null,
+                'image' => 'upload/no_image.jpg',
                 'account_holder' => $faker->name,
                 'account_number' => $faker->bankAccountNumber,
                 'bank_name' => $faker->company,
